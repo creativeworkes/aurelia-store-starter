@@ -1,0 +1,14 @@
+<template>
+  <h1>Frameworks</h1>
+
+  <input type="text" value.bind="task" placeholder="请输入任务名称">
+
+  <button click.trigger="addTodo()">追加任务</button>
+
+  <br>
+
+  <ul>
+    <li repeat.for="todo of state.todos">${todo.id}  ${todo.name}</li>
+  </ul>
+</template>
+
